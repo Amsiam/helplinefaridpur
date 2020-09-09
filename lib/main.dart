@@ -73,7 +73,10 @@ class _MyHomePageState extends State<MyHomePage> {
           children: [
             DrawerHeader(child: Container()),
             ListTile(
-              leading: Icon(Icons.airport_shuttle),
+              leading: Icon(
+                Icons.airport_shuttle,
+                color: Colors.cyan,
+              ),
               title: Text("Ambulance Service"),
               onTap: () => gooo("Ambulance Service", "/ambulance/"),
             ),
@@ -126,7 +129,10 @@ class _MyHomePageState extends State<MyHomePage> {
               ],
             ),
             ExpansionTile(
-              leading: Icon(Icons.local_library_rounded),
+              leading: Icon(
+                Icons.local_library_rounded,
+                color: Colors.pinkAccent,
+              ),
               title: Text("Book Shop"),
               children: [
                 ListTile(
@@ -140,7 +146,10 @@ class _MyHomePageState extends State<MyHomePage> {
               ],
             ),
             ExpansionTile(
-              leading: Icon(Icons.local_hospital),
+              leading: Icon(
+                Icons.local_hospital,
+                color: Colors.red,
+              ),
               title: Text("Doctor List"),
               children: [
                 ListTile(
@@ -169,10 +178,39 @@ class _MyHomePageState extends State<MyHomePage> {
                   title: Text("নাক কান গলা বিশেষজ্ঞ"),
                   onTap: () => gooo("নাক কান গলা বিশেষজ্ঞ", "/নাক-কান-গলা/"),
                 ),
+                ListTile(
+                  title: Text("দন্ত বিশেষজ্ঞ"),
+                  onTap: () => gooo("দন্ত বিশেষজ্ঞদের তালিকা", "/dental/"),
+                ),
+                ListTile(
+                  title: Text("বাতজ্বর এর ডাক্তার দের তালিকা"),
+                  onTap: () => gooo("বাতজ্বর এর ডাক্তার দের তালিকা", "/raimo/"),
+                ),
+                ListTile(
+                  title: Text("মা ও শিশু বিশেষজ্ঞ দের তালিকা"),
+                  onTap: () => gooo("মা ও শিশু বিশেষজ্ঞ দের তালিকা", "/mce/"),
+                ),
+                ListTile(
+                  title: Text("হাড়জোড় বিশেষজ্ঞ(আর্থোপিডিক্স) দের তালিকা"),
+                  onTap: () => gooo(
+                      "হাড়জোড় বিশেষজ্ঞ(আর্থোপিডিক্স) দের তালিকা", "/artho/"),
+                ),
+                ListTile(
+                  title: Text("হৃদরোগ বিশেষজ্ঞ দের তালিকা"),
+                  onTap: () => gooo("হৃদরোগ বিশেষজ্ঞ দের তালিকা", "/heart/"),
+                ),
+                ListTile(
+                  title: Text("ডায়াবেটিস বিশেষজ্ঞ দের তালিকা"),
+                  onTap: () =>
+                      gooo("ডায়াবেটিস বিশেষজ্ঞ দের তালিকা", "/diebetic/"),
+                ),
               ],
             ),
             ExpansionTile(
-              leading: Icon(Icons.school),
+              leading: Icon(
+                Icons.school,
+                color: Colors.black,
+              ),
               title: Text("Tuition Corner"),
               children: [
                 ListTile(
@@ -186,7 +224,10 @@ class _MyHomePageState extends State<MyHomePage> {
               ],
             ),
             ExpansionTile(
-              leading: Icon(Icons.home),
+              leading: Icon(
+                Icons.home,
+                color: Colors.greenAccent,
+              ),
               title: Text("To-Let Corner"),
               children: [
                 ListTile(
@@ -200,12 +241,40 @@ class _MyHomePageState extends State<MyHomePage> {
               ],
             ),
             ExpansionTile(
-              leading: Icon(Icons.drive_eta),
+              leading: Icon(
+                Icons.drive_eta,
+                color: Colors.amber,
+              ),
               title: Text("Transport Service"),
               children: [
                 ListTile(
+                  title: Text(
+                      "ফরিদপুর থেকে দূরপাল্লার বাসের সময় সূচী ও ফোন নাম্বার"),
+                  onTap: () => gooo(
+                      "ফরিদপুর থেকে দূরপাল্লার বাসের সময় সূচী ও ফোন নাম্বার",
+                      "/bus/"),
+                ),
+                ListTile(
+                  title: Text("প্রাইভেট কারের তালিকা ও ফোন নাম্বার"),
+                  onTap: () =>
+                      gooo("প্রাইভেট কারের তালিকা ও ফোন নাম্বার", "/privet/"),
+                ),
+                ListTile(
                   title: Text("মাইক্রো বাসের তালিকা"),
                   onTap: () => gooo("মাইক্রো বাসের তালিকা", "/micro/"),
+                ),
+                ListTile(
+                  title: Text("মিনি ট্রাকের তালিকা ও ফোন নাম্বার"),
+                  onTap: () =>
+                      gooo("মিনি ট্রাকের তালিকা ও ফোন নাম্বার", "/mtruck/"),
+                ),
+                ListTile(
+                  title: Text("ট্রাকের তালিকা ও ফোন নাম্বার"),
+                  onTap: () => gooo("ট্রাকের তালিকা ও ফোন নাম্বার", "/truck/"),
+                ),
+                ListTile(
+                  title: Text("ট্রেনের সময় সুচী ও ভাড়া"),
+                  onTap: () => gooo("ট্রেনের সময় সুচী ও ভাড়া", "/train/"),
                 ),
                 ListTile(
                   title: Text("চালক হিসেবে নিবন্ধন করুন"),
@@ -214,9 +283,28 @@ class _MyHomePageState extends State<MyHomePage> {
               ],
             ),
             ListTile(
-              leading: Icon(Icons.perm_phone_msg),
+              leading: Icon(
+                Icons.perm_phone_msg,
+                color: Colors.brown,
+              ),
               title: Text("জরুরী নাম্বারের তালিকা"),
               onTap: () => gooo("জরুরী নাম্বারের তালিকা", "/emergency/"),
+            ),
+            ListTile(
+              leading: Icon(
+                Icons.accessibility_new,
+                color: Colors.purpleAccent,
+              ),
+              title: Text("Be a Entrepreneur"),
+              onTap: () => gooo("Be a Entrepreneur", "/jentra/"),
+            ),
+            ListTile(
+              leading: Icon(
+                Icons.offline_bolt,
+                color: Colors.indigo,
+              ),
+              title: Text("Hot Line"),
+              onTap: () => gooo("Hot Line", "/hotline/"),
             ),
             Divider(),
             ListTile(
